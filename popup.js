@@ -19,7 +19,7 @@ async function getPromo() {
   let month = date.getMonth() + 1;
   let year = date.getFullYear();
 
-  let currentDate = `${day}.${month}.${year}`; //faf91e38869ace231718ca2c7b136f53
+  let currentDate = `${day}.${month}.${year}`;
   const response = await fetch(
     "http://api.scrapestack.com/scrape?access_key={your_scrapestack_key}&url=http://www.saatva.com"
   )
