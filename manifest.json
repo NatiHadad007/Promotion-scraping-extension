@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Saatva Text Extractor",
+  "version": "1.0",
+  "description": "Extract text from www.saatva.com",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "saatva-icon.png",
+      "48": "saatva-icon.png",
+      "128": "saatva-icon.png"
+    }
+  },
+  "icons": {
+    "16": "saatva-icon.png",
+    "48": "saatva-icon.png",
+    "128": "saatva-icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.saatva.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
